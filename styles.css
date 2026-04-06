@@ -49,6 +49,7 @@ header h1 {
 header p {
     font-size: 1.2rem;
     opacity: 0.9;
+    color: var(--text-light);
 }
 
 /* --- Navigation --- */
@@ -277,6 +278,10 @@ footer {
     padding: 2rem;
     margin-top: 3rem;
     font-size: 0.95rem;
+}
+
+footer p {
+    color: var(--text-light);
 }
 
 /* --- Responsive --- */
