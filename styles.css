@@ -1,0 +1,206 @@
+body {
+    background: linear-gradient(270deg, transparent 15px, #00d9ff 15px, #00d9ff 30px, transparent 30px) repeat-y,
+                linear-gradient(-270deg, transparent 15px, #00d9ff 15px, #00d9ff 30px, transparent 30px) repeat-y;
+    background-size: 30px 60px;
+    background-position: left, right;
+}
+h4 { /* Title/Header */
+    font-family: Cursive;
+    font-size: 48px; 
+    font-weight: bold;
+    font-style: italic;
+    text-align: center; 
+    /* Work around to get underline to fully work. */
+    border-bottom: 3px solid black; /* Creates an underline */
+    display: inline-block;
+    padding-bottom: 0.1px; /* Adds spacing */
+}
+h2 { /* Subpage Title/Header */
+    font-family: Cursive;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+}
+h3 { /* Body text */
+    font-family: Sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;;
+}
+.nav-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #00d9ff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button a:hover {
+    background-color: #0056b3;
+}
+
+/* Global Styles */
+/* Apply consistent styles to all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bf37c4;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: rgb(253, 198, 241);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* The "Go to Subpages" Buttons */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+    justify-content: center; /* Centers buttons when wrapped */
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+.page-button {
+    flex: 1; /* Makes buttons responsive */
+    max-width: 150px; /* Prevents them from stretching too much */
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    border: 3px solid black;  
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile: Stack Buttons Vertically */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column; /* Changes to vertical layout */
+        align-items: center; /* Centers the buttons */
+    }
+
+    .page-button {
+        width: 100%; /* Makes buttons full width */
+        max-width: 200px; /* Limits size */
+    }
+}   
+
+/* Individual button colors */
+.essay { background-color: #00d9ff; } 
+.poem { background-color: #00d9ff; }  
+.artwork { background-color: #00d9ff; } 
+
+.page-button:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Enhances shadow effect */
+}
+
+/* The "Back to Home" Buttons */
+.nav-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #00d9ff;  /* ? Set to solid #00d9ff */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 3px solid black;  /* Black border */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Subtle black shadow */
+}
+
+.nav-button a:hover {
+    background-color: #00b8e6; /* Slightly darker shade on hover */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+/* Poem Page */
+.poem-image {
+    text-align: center;  /* Centers the image horizontally */
+    display: flex;
+    justify-content: center; /* Ensures centering */
+    align-items: center;
+    width: 100%;  /* Ensures it does not overflow */
+}
+
+.poem-image img {
+    max-width: 90%; /* Ensures image does not exceed container width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for design */
+}
+
+/* Essay Page */
+.download-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.download-button a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 3px solid black;  /* Black border */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Subtle black shadow */
+}
+
+.download-button a:hover {
+    background-color: #218838;
+}
+
+/* Artwork Page */
+.artwork-image {
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; /* Centers the div itself */
+}
+
+.artwork-image img {
+    max-width: 90%; /* Ensures image does not exceed container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow */
+}

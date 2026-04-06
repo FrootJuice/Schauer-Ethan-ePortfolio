@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpful Resources - Food Insecurity at Northwest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c5f2d 0%, #97bc62 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: #234524;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #97bc62;
+        }
+
+        nav a.active {
+            color: #97bc62;
+            border-bottom: 2px solid #97bc62;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: #2c5f2d;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #97bc62;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #234524;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .resource-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2c5f2d;
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-card h3 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2c5f2d;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background: #234524;
+            transform: translateY(-2px);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        footer {
+            background: #234524;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Helpful Resources</h1>
+        <p>Support and Assistance for Northwest Students</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="work-samples.html" class="active">Work Samples</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Campus Resources</h2>
+            <p>Resources available to Northwest Missouri State University students experiencing food insecurity.</p>
+        
+            <div class="resource-card">
+                <h3>Bearcat Food Pantry</h3>
+                <p>The on-campus food pantry provides free non-perishable food items to Northwest students. Located in room 2200 of the Student Union. No appointment needed, but bring your Bearcat ID card and check in with Student Affairs.</p>
+                <a href="https://www.nwmissouri.edu/studentaffairs/foodpantry/index.htm" class="btn" target="_blank">Visit Bearcat Food Pantry</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Community Resources</h2>
+            <p>Local Maryville resources including food pantries, SNAP benefits, and community assistance programs.</p>
+        
+            <div class="resource-card">
+                <h3>SNAP Benefits (Food Stamps)</h3>
+                <p>The Supplemental Nutrition Assistance Program provides food benefits to low-income individuals and families in Missouri. Check eligibility requirements and apply online through the Missouri Department of Social Services.</p>
+                <a href="https://mydss.mo.gov/food-assistance/apply-for-snap" class="btn" target="_blank">Apply for SNAP</a>
+            </div>
+        
+            <div class="resource-card">
+                <h3>Maryville Ministry Center Food Pantry</h3>
+                <p>Community food pantry serving Nodaway County residents. Open Monday, Wednesday, and Friday from 1:30 PM to 3:30 PM. Must meet federal income guidelines and live in Nodaway County.</p>
+                <a href="https://www.maryvilleministrycenter.com/" class="btn" target="_blank">Visit Ministry Center</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;  2025 Ethan Schauer | Comp 112 Global Project</p>
+    </footer>
+</body>
+</html>
