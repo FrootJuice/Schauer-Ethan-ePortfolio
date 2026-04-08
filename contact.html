@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Ethan Schauer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .contact-icon.linkedin {
+            color: #0077b5;
+        }
+        .contact-icon.gmail {
+            color: #EA4335;
+        }
+        .btn-linkedin {
+            display: inline-block;
+            background: #0077b5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn-linkedin:hover {
+            background: #005f8e;
+            transform: translateY(-2px);
+        }
+        .btn-gmail {
+            display: inline-block;
+            background: #EA4335;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn-gmail:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
 
@@ -28,17 +71,28 @@
 
         <section id="contact">
             <h2>Get in Touch</h2>
-            <p>The best way to reach me or learn more about my professional background is through LinkedIn. I am currently open to internship opportunities and professional networking.</p>
+            <p>The best way to reach me or learn more about my professional background is through LinkedIn. I am also available via email for professional inquiries and networking opportunities.</p>
 
             <div class="grid">
                 <div class="contact-card">
+                    <div class="contact-icon linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
                     <h3>LinkedIn</h3>
-                    <p>Connect with me professionally on LinkedIn.</p>
-                    <a href="https://linkedin.com/in/ethanschauer" class="btn" target="_blank">View LinkedIn Profile</a>
+                    <p>Connect with me professionally on LinkedIn to view my full work history and network.</p>
+                    <a href="https://www.linkedin.com/in/ethanschauer/" class="btn-linkedin" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> View LinkedIn Profile
+                    </a>
                 </div>
                 <div class="contact-card">
-                    <h3>University</h3>
-                    <p>Northwest Missouri State University<br>Maryville, MO<br>Expected Graduation: May 2027</p>
+                    <div class="contact-icon gmail">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>For professional inquiries, feel free to reach out via email and I will respond as soon as possible.</p>
+                    <a href="mailto:ethanschauerpro@gmail.com" class="btn-gmail">
+                        <i class="fa-solid fa-envelope"></i> ethanschauerpro@gmail.com
+                    </a>
                 </div>
             </div>
         </section>
