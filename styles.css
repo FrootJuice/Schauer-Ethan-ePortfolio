@@ -209,6 +209,18 @@ li {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* --- About Page --- */
+.about-photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--steel-blue);
+    margin: 0 auto 2rem auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 /* --- Resume Page --- */
 .resume-embed {
     width: 100%;
@@ -251,29 +263,51 @@ li {
 }
 
 /* --- Contact Page --- */
-.contact-card {
-    background: white;
-    border-radius: 10px;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    border-top: 4px solid var(--steel-blue);
+.contact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.contact-card h3 {
-    margin-top: 0;
+.contact-icon.linkedin {
+    color: #0077b5;
 }
 
-/* --- About Page --- */
-.about-photo {
-    display: block;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--steel-blue);
-    margin: 0 auto 2rem auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+.contact-icon.gmail {
+    color: #EA4335;
+}
+
+.btn-linkedin {
+    display: inline-block;
+    background: #0077b5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-linkedin:hover {
+    background: #005f8e;
+    transform: translateY(-2px);
+}
+
+.btn-gmail {
+    display: inline-block;
+    background: #EA4335;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-gmail:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
 }
 
 /* --- Footer --- */
