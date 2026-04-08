@@ -244,6 +244,12 @@ li {
     margin-bottom: 0.75rem;
 }
 
+.video-embed {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 /* --- Contact Page --- */
 .contact-card {
     background: white;
