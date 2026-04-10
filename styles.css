@@ -366,6 +366,13 @@ footer p {
         padding: 2rem 1rem;
     }
 
+    .btn-light {
+        display: block;
+        width: 100%;
+        margin: 0.4rem 0;
+        text-align: center;
+    }
+    
     .resume-embed {
         height: 500px;
     }
