@@ -262,6 +262,15 @@ li {
     overflow: hidden;
 }
 
+/* --- Involvement Page --- */
+.work-photo {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: block;
+}
+
 /* --- Contact Page --- */
 .contact-card {
     background: white;
