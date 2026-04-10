@@ -1,6 +1,6 @@
 /* ============================================
    Ethan Schauer - ePortfolio Stylesheet
-   Color Scheme: Navy & Steel Blue (Option A)
+   Color Scheme: Navy & Steel Blue
    ============================================ */
 
 /* --- Color Variables --- */
@@ -372,7 +372,7 @@ footer p {
         margin: 0.4rem 0;
         text-align: center;
     }
-    
+
     .resume-embed {
         height: 500px;
     }
